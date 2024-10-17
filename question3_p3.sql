@@ -648,163 +648,164 @@ VALUES
 (95, 'Dental Insurance'),
 (95, 'Vision Insurance');
 
-INSERT INTO application (applicationId, email, jobId, status, additionalNotes, createdDate)
+
+INSERT INTO application (email, jobId, status, additionalNotes, createdDate)
 VALUES
 -- User: alice.smith@example.com
-(1, 'alice.smith@example.com', 1, 'Submitted', 'Looking forward to this opportunity.', '2023-04-15'),
-(2, 'alice.smith@example.com', 36, 'Interviewing', 'Had a phone screening.', '2023-04-20'),
-(3, 'alice.smith@example.com', 56, 'Submitted', NULL, '2023-04-25'),
+('alice.smith@example.com', 1, 'Submitted', 'Looking forward to this opportunity.', '2023-04-15'),
+('alice.smith@example.com', 36, 'Interviewing', 'Had a phone screening.', '2023-04-20'),
+('alice.smith@example.com', 56, 'Submitted', NULL, '2023-04-25'),
 
 -- User: bob.johnson@example.com
-(4, 'bob.johnson@example.com', 2, 'Submitted', NULL, '2023-04-16'),
-(5, 'bob.johnson@example.com', 37, 'Interviewing', NULL, '2023-04-22'),
-(6, 'bob.johnson@example.com', 57, 'Submitted', NULL, '2023-04-28'),
+('bob.johnson@example.com', 2, 'Submitted', NULL, '2023-04-16'),
+('bob.johnson@example.com', 37, 'Interviewing', NULL, '2023-04-22'),
+('bob.johnson@example.com', 57, 'Submitted', NULL, '2023-04-28'),
 
 -- User: carol.williams@example.com
-(7, 'carol.williams@example.com', 3, 'Offered', NULL, '2023-04-17'),
-(8, 'carol.williams@example.com', 38, 'Rejected', NULL, '2023-04-23'),
-(9, 'carol.williams@example.com', 58, 'Submitted', NULL, '2023-04-29'),
+('carol.williams@example.com', 3, 'Offered', NULL, '2023-04-17'),
+('carol.williams@example.com', 38, 'Rejected', NULL, '2023-04-23'),
+('carol.williams@example.com', 58, 'Submitted', NULL, '2023-04-29'),
 
 -- User: dave.brown@example.com
-(10, 'dave.brown@example.com', 4, 'Submitted', 'Excited about this role.', '2023-04-18'),
-(11, 'dave.brown@example.com', 59, 'Submitted', NULL, '2023-04-24'),
+('dave.brown@example.com', 4, 'Submitted', 'Excited about this role.', '2023-04-18'),
+('dave.brown@example.com', 59, 'Submitted', NULL, '2023-04-24'),
 
 -- User: eva.jones@example.com
-(12, 'eva.jones@example.com', 5, 'Interviewing', NULL, '2023-04-19'),
-(13, 'eva.jones@example.com', 40, 'Submitted', NULL, '2023-04-25'),
-(14, 'eva.jones@example.com', 60, 'Submitted', NULL, '2023-05-01'),
+('eva.jones@example.com', 5, 'Interviewing', NULL, '2023-04-19'),
+('eva.jones@example.com', 40, 'Submitted', NULL, '2023-04-25'),
+('eva.jones@example.com', 60, 'Submitted', NULL, '2023-05-01'),
 
 -- User: frank.miller@example.com
-(15, 'frank.miller@example.com', 6, 'Submitted', NULL, '2023-04-20'),
-(16, 'frank.miller@example.com', 61, 'Interviewing', NULL, '2023-04-26'),
+('frank.miller@example.com', 6, 'Submitted', NULL, '2023-04-20'),
+('frank.miller@example.com', 61, 'Interviewing', NULL, '2023-04-26'),
 
 -- User: grace.davis@example.com
-(17, 'grace.davis@example.com', 7, 'Rejected', NULL, '2023-04-21'),
-(18, 'grace.davis@example.com', 42, 'Submitted', NULL, '2023-04-27'),
-(19, 'grace.davis@example.com', 62, 'Submitted', NULL, '2023-05-03'),
+('grace.davis@example.com', 7, 'Rejected', NULL, '2023-04-21'),
+('grace.davis@example.com', 42, 'Submitted', NULL, '2023-04-27'),
+('grace.davis@example.com', 62, 'Submitted', NULL, '2023-05-03'),
 
 -- User: henry.garcia@example.com
-(20, 'henry.garcia@example.com', 8, 'Interviewing', NULL, '2023-04-22'),
-(21, 'henry.garcia@example.com', 43, 'Submitted', NULL, '2023-04-28'),
-(22, 'henry.garcia@example.com', 63, 'Submitted', NULL, '2023-05-04'),
+('henry.garcia@example.com', 8, 'Interviewing', NULL, '2023-04-22'),
+('henry.garcia@example.com', 43, 'Submitted', NULL, '2023-04-28'),
+('henry.garcia@example.com', 63, 'Submitted', NULL, '2023-05-04'),
 
 -- User: irene.martinez@example.com
-(23, 'irene.martinez@example.com', 9, 'Submitted', NULL, '2023-04-23'),
-(24, 'irene.martinez@example.com', 64, 'Submitted', NULL, '2023-04-29'),
+('irene.martinez@example.com', 9, 'Submitted', NULL, '2023-04-23'),
+('irene.martinez@example.com', 64, 'Submitted', NULL, '2023-04-29'),
 
 -- User: jack.taylor@example.com
-(25, 'jack.taylor@example.com', 10, 'Offered', NULL, '2023-04-24'),
-(26, 'jack.taylor@example.com', 65, 'Submitted', NULL, '2023-04-30'),
+('jack.taylor@example.com', 10, 'Offered', NULL, '2023-04-24'),
+('jack.taylor@example.com', 65, 'Submitted', NULL, '2023-04-30'),
 
 -- User: karen.anderson@example.com
-(27, 'karen.anderson@example.com', 11, 'Submitted', 'Looking forward to hearing from you.', '2023-04-25'),
-(28, 'karen.anderson@example.com', 46, 'Submitted', NULL, '2023-05-01'),
-(29, 'karen.anderson@example.com', 66, 'Submitted', NULL, '2023-05-07'),
+('karen.anderson@example.com', 11, 'Submitted', 'Looking forward to hearing from you.', '2023-04-25'),
+('karen.anderson@example.com', 46, 'Submitted', NULL, '2023-05-01'),
+('karen.anderson@example.com', 66, 'Submitted', NULL, '2023-05-07'),
 
 -- User: leo.thomas@example.com
-(30, 'leo.thomas@example.com', 12, 'Interviewing', NULL, '2023-04-26'),
-(31, 'leo.thomas@example.com', 47, 'Submitted', NULL, '2023-05-02'),
-(32, 'leo.thomas@example.com', 67, 'Submitted', NULL, '2023-05-08'),
+('leo.thomas@example.com', 12, 'Interviewing', NULL, '2023-04-26'),
+('leo.thomas@example.com', 47, 'Submitted', NULL, '2023-05-02'),
+('leo.thomas@example.com', 67, 'Submitted', NULL, '2023-05-08'),
 
 -- User: mary.moore@example.com
-(33, 'mary.moore@example.com', 13, 'Submitted', NULL, '2023-04-27'),
-(34, 'mary.moore@example.com', 48, 'Submitted', NULL, '2023-05-03'),
-(35, 'mary.moore@example.com', 68, 'Submitted', NULL, '2023-05-09'),
+('mary.moore@example.com', 13, 'Submitted', NULL, '2023-04-27'),
+('mary.moore@example.com', 48, 'Submitted', NULL, '2023-05-03'),
+('mary.moore@example.com', 68, 'Submitted', NULL, '2023-05-09'),
 
 -- User: nathan.jackson@example.com
-(36, 'nathan.jackson@example.com', 14, 'Rejected', NULL, '2023-04-28'),
-(37, 'nathan.jackson@example.com', 69, 'Submitted', NULL, '2023-05-04'),
+('nathan.jackson@example.com', 14, 'Rejected', NULL, '2023-04-28'),
+('nathan.jackson@example.com', 69, 'Submitted', NULL, '2023-05-04'),
 
 -- User: olivia.white@example.com
-(38, 'olivia.white@example.com', 15, 'Submitted', NULL, '2023-04-29'),
-(39, 'olivia.white@example.com', 50, 'Submitted', NULL, '2023-05-05'),
-(40, 'olivia.white@example.com', 70, 'Submitted', NULL, '2023-05-11'),
+('olivia.white@example.com', 15, 'Submitted', NULL, '2023-04-29'),
+('olivia.white@example.com', 50, 'Submitted', NULL, '2023-05-05'),
+('olivia.white@example.com', 70, 'Submitted', NULL, '2023-05-11'),
 
 -- User: peter.harris@example.com
-(41, 'peter.harris@example.com', 16, 'Interviewing', NULL, '2023-04-30'),
-(42, 'peter.harris@example.com', 51, 'Submitted', NULL, '2023-05-06'),
+('peter.harris@example.com', 16, 'Interviewing', NULL, '2023-04-30'),
+('peter.harris@example.com', 51, 'Submitted', NULL, '2023-05-06'),
 
 -- User: queen.lewis@example.com
-(43, 'queen.lewis@example.com', 17, 'Submitted', NULL, '2023-05-01'),
-(44, 'queen.lewis@example.com', 52, 'Submitted', NULL, '2023-05-07'),
+('queen.lewis@example.com', 17, 'Submitted', NULL, '2023-05-01'),
+('queen.lewis@example.com', 52, 'Submitted', NULL, '2023-05-07'),
 
 -- User: robert.clark@example.com
-(45, 'robert.clark@example.com', 18, 'Submitted', NULL, '2023-05-02'),
-(46, 'robert.clark@example.com', 53, 'Submitted', NULL, '2023-05-08'),
-(47, 'robert.clark@example.com', 73, 'Submitted', NULL, '2023-05-14'),
+('robert.clark@example.com', 18, 'Submitted', NULL, '2023-05-02'),
+('robert.clark@example.com', 53, 'Submitted', NULL, '2023-05-08'),
+('robert.clark@example.com', 73, 'Submitted', NULL, '2023-05-14'),
 
 -- User: susan.robinson@example.com
-(48, 'susan.robinson@example.com', 19, 'Offered', NULL, '2023-05-03'),
-(49, 'susan.robinson@example.com', 54, 'Submitted', NULL, '2023-05-09'),
+('susan.robinson@example.com', 19, 'Offered', NULL, '2023-05-03'),
+('susan.robinson@example.com', 54, 'Submitted', NULL, '2023-05-09'),
 
 -- User: timothy.walker@example.com
-(50, 'timothy.walker@example.com', 20, 'Submitted', NULL, '2023-05-04'),
-(51, 'timothy.walker@example.com', 55, 'Submitted', NULL, '2023-05-10'),
+('timothy.walker@example.com', 20, 'Submitted', NULL, '2023-05-04'),
+('timothy.walker@example.com', 55, 'Submitted', NULL, '2023-05-10'),
 
 -- User: ursula.young@example.com
-(52, 'ursula.young@example.com', 21, 'Interviewing', NULL, '2023-05-05'),
-(53, 'ursula.young@example.com', 76, 'Submitted', NULL, '2023-05-11'),
-(54, 'ursula.young@example.com', 71, 'Submitted', NULL, '2023-05-17'),
+('ursula.young@example.com', 21, 'Interviewing', NULL, '2023-05-05'),
+('ursula.young@example.com', 76, 'Submitted', NULL, '2023-05-11'),
+('ursula.young@example.com', 71, 'Submitted', NULL, '2023-05-17'),
 
 -- User: victor.king@example.com
-(55, 'victor.king@example.com', 22, 'Submitted', NULL, '2023-05-06'),
-(56, 'victor.king@example.com', 83, 'Submitted', NULL, '2023-05-12'),
+('victor.king@example.com', 22, 'Submitted', NULL, '2023-05-06'),
+('victor.king@example.com', 83, 'Submitted', NULL, '2023-05-12'),
 
 -- User: wendy.wright@example.com
-(57, 'wendy.wright@example.com', 23, 'Rejected', NULL, '2023-05-07'),
-(58, 'wendy.wright@example.com', 79, 'Submitted', NULL, '2023-05-13'),
-(59, 'wendy.wright@example.com', 91, 'Submitted', NULL, '2023-05-19'),
+('wendy.wright@example.com', 23, 'Rejected', NULL, '2023-05-07'),
+('wendy.wright@example.com', 79, 'Submitted', NULL, '2023-05-13'),
+('wendy.wright@example.com', 91, 'Submitted', NULL, '2023-05-19'),
 
 -- User: xavier.lopez@example.com
-(60, 'xavier.lopez@example.com', 24, 'Submitted', NULL, '2023-05-08'),
-(61, 'xavier.lopez@example.com', 89, 'Submitted', NULL, '2023-05-14'),
+('xavier.lopez@example.com', 24, 'Submitted', NULL, '2023-05-08'),
+('xavier.lopez@example.com', 89, 'Submitted', NULL, '2023-05-14'),
 
 -- User: yvonne.hill@example.com
-(62, 'yvonne.hill@example.com', 25, 'Interviewing', NULL, '2023-05-09'),
-(63, 'yvonne.hill@example.com', 75, 'Submitted', NULL, '2023-05-15'),
+('yvonne.hill@example.com', 25, 'Interviewing', NULL, '2023-05-09'),
+('yvonne.hill@example.com', 75, 'Submitted', NULL, '2023-05-15'),
 
 -- User: zachary.scott@example.com
-(64, 'zachary.scott@example.com', 26, 'Submitted', NULL, '2023-05-10'),
-(65, 'zachary.scott@example.com', 80, 'Submitted', NULL, '2023-05-16'),
+('zachary.scott@example.com', 26, 'Submitted', NULL, '2023-05-10'),
+('zachary.scott@example.com', 80, 'Submitted', NULL, '2023-05-16'),
 
 -- User: amelia.green@example.com
-(66, 'amelia.green@example.com', 27, 'Submitted', NULL, '2023-05-11'),
-(67, 'amelia.green@example.com', 60, 'Submitted', NULL, '2023-05-17'),
+('amelia.green@example.com', 27, 'Submitted', NULL, '2023-05-11'),
+('amelia.green@example.com', 60, 'Submitted', NULL, '2023-05-17'),
 
 -- User: brian.adams@example.com
-(68, 'brian.adams@example.com', 28, 'Interviewing', NULL, '2023-05-12'),
-(69, 'brian.adams@example.com', 81, 'Submitted', NULL, '2023-05-18'),
-(70, 'brian.adams@example.com', 84, 'Submitted', NULL, '2023-05-24'),
+('brian.adams@example.com', 28, 'Interviewing', NULL, '2023-05-12'),
+('brian.adams@example.com', 81, 'Submitted', NULL, '2023-05-18'),
+('brian.adams@example.com', 84, 'Submitted', NULL, '2023-05-24'),
 
 -- User: claire.baker@example.com
-(71, 'claire.baker@example.com', 29, 'Submitted', NULL, '2023-05-13'),
-(72, 'claire.baker@example.com', 82, 'Submitted', NULL, '2023-05-19'),
+('claire.baker@example.com', 29, 'Submitted', NULL, '2023-05-13'),
+('claire.baker@example.com', 82, 'Submitted', NULL, '2023-05-19'),
 
 -- User: daniel.gonzalez@example.com
-(73, 'daniel.gonzalez@example.com', 30, 'Offered', NULL, '2023-05-14'),
-(74, 'daniel.gonzalez@example.com', 86, 'Submitted', NULL, '2023-05-20'),
+('daniel.gonzalez@example.com', 30, 'Offered', NULL, '2023-05-14'),
+('daniel.gonzalez@example.com', 86, 'Submitted', NULL, '2023-05-20'),
 
 -- User: emma.nelson@example.com
-(75, 'emma.nelson@example.com', 31, 'Submitted', NULL, '2023-05-15'),
-(76, 'emma.nelson@example.com', 92, 'Submitted', NULL, '2023-05-21'),
+('emma.nelson@example.com', 31, 'Submitted', NULL, '2023-05-15'),
+('emma.nelson@example.com', 92, 'Submitted', NULL, '2023-05-21'),
 
 -- User: fred.carter@example.com
-(77, 'fred.carter@example.com', 32, 'Rejected', NULL, '2023-05-16'),
-(78, 'fred.carter@example.com', 85, 'Submitted', NULL, '2023-05-22'),
+('fred.carter@example.com', 32, 'Rejected', NULL, '2023-05-16'),
+('fred.carter@example.com', 85, 'Submitted', NULL, '2023-05-22'),
 
 -- User: gina.mitchell@example.com
-(79, 'gina.mitchell@example.com', 33, 'Submitted', NULL, '2023-05-17'),
-(80, 'gina.mitchell@example.com', 87, 'Submitted', NULL, '2023-05-23'),
-(81, 'gina.mitchell@example.com', 91, 'Submitted', NULL, '2023-05-29'),
+('gina.mitchell@example.com', 33, 'Submitted', NULL, '2023-05-17'),
+('gina.mitchell@example.com', 87, 'Submitted', NULL, '2023-05-23'),
+('gina.mitchell@example.com', 91, 'Submitted', NULL, '2023-05-29'),
 
 -- User: harry.perez@example.com
-(82, 'harry.perez@example.com', 34, 'Interviewing', NULL, '2023-05-18'),
-(83, 'harry.perez@example.com', 88, 'Submitted', NULL, '2023-05-24'),
+('harry.perez@example.com', 34, 'Interviewing', NULL, '2023-05-18'),
+('harry.perez@example.com', 88, 'Submitted', NULL, '2023-05-24'),
 
 -- User: isabella.roberts@example.com
-(84, 'isabella.roberts@example.com', 35, 'Submitted', NULL, '2023-05-19'),
-(85, 'isabella.roberts@example.com', 90, 'Submitted', NULL, '2023-05-25'),
-(86, 'isabella.roberts@example.com', 95, 'Submitted', NULL, '2023-05-31');
+('isabella.roberts@example.com', 35, 'Submitted', NULL, '2023-05-19'),
+('isabella.roberts@example.com', 90, 'Submitted', NULL, '2023-05-25'),
+('isabella.roberts@example.com', 95, 'Submitted', NULL, '2023-05-31');
 
 
 
@@ -940,41 +941,41 @@ VALUES
 INSERT INTO [contains] (applicationId, interviewId)
 VALUES
 -- Bob Johnson's applicationId 5
-(5, 1),
 (5, 2),
+(5, 3),
 
 -- Carol Williams's applicationId 7
-(7, 3),
 (7, 4),
 (7, 5),
+(7, 6),
 
 -- Henry Garcia's applicationId 20
-(20, 6),
 (20, 7),
+(20, 8),
 
 -- Mary Moore's applicationId 33
-(33, 8),
 (33, 9),
+(33, 10),
 
 -- Robert Clark's applicationId 45
-(45, 10),
 (45, 11),
+(45, 12),
 
 -- Wendy Wright's applicationId 58
-(58, 12),
 (58, 13),
+(58, 14),
 
 -- Brian Adams's applicationId 68
-(68, 14),
 (68, 15),
+(68, 16),
 
 -- Gina Mitchell's applicationId 79
-(79, 16),
 (79, 17),
+(79, 18),
 
 -- Harry Perez's applicationId 82
-(82, 18),
-(82, 19);
+(82, 19),
+(82, 20);
 
 
 INSERT INTO locatedAt (companyId, jobId)
