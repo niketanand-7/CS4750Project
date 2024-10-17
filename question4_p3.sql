@@ -1,15 +1,15 @@
-USE ClassProject;
+USE ClassProjectV2;
 GO
 
 
 -- Question 4
 
--- -- 1. Aggregate Query with Join
--- SELECT u.email, u.name, COUNT(a.applicationId) AS total_applications
--- FROM [user] u
--- JOIN application a ON u.email = a.email
--- GROUP BY u.email, u.name
--- ORDER BY total_applications DESC;
+-- 1. Aggregate Query with Join
+SELECT u.email, u.name, COUNT(a.applicationId) AS total_applications
+FROM [user] u
+JOIN application a ON u.email = a.email
+GROUP BY u.email, u.name
+ORDER BY total_applications DESC;
 
 -- -- Answer: There is 1 application for each user
 

@@ -1,9 +1,9 @@
 
 
--- CREATE DATABASE ClassProject;
--- GO
+CREATE DATABASE ClassProjectV2;
+GO
 
-USE ClassProject;
+USE ClassProjectV2;
 GO
 
 -- Question 1

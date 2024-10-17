@@ -1,4 +1,4 @@
-USE ClassProject;
+USE ClassProjectV2;
 GO
 
 -- Question 2
