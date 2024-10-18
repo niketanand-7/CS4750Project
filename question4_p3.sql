@@ -9,8 +9,6 @@ GO
 SELECT COUNT(*) AS totalCompanies
 FROM company;
 
--- -- Answer: There is 1 application for each user
-
 -- -- 2. Aggregate Query
 -- Average Salary of Each company
 SELECT c.name AS company_name, AVG(ft.salary) AS average_salary
@@ -76,12 +74,12 @@ WHERE
 
 
 -- 7. Subquery
--- all emails that are related to techcorp
+-- all emails that are related to Apple
 SELECT COUNT(*) AS totalApplications
 FROM application a
 JOIN job j ON a.jobId = j.jobId
 JOIN company c ON j.companyId = c.companyId
-WHERE c.name = 'TechCorp';
+WHERE c.name = 'Apple';
 
 
 -- 8. Join statement 
@@ -98,7 +96,7 @@ GROUP BY
 ORDER BY
     jobCount DESC;
 
--- 9.
+-- 9. All applications created by a specific user
 SELECT
     a.applicationId,
     a.jobId,

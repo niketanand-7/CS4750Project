@@ -371,7 +371,6 @@ VALUES
 (50, 22.50, '2023-06-15', '2023-09-15');
 
 
-
 INSERT INTO fullTime (jobId, startDate, salary)
 VALUES
 (51, '2023-09-01', 85000.00),
@@ -937,45 +936,46 @@ VALUES
 ( 'isabella.roberts@example.com', 85),
 ( 'isabella.roberts@example.com', 86);
 
+SELECT * From interview
 
 INSERT INTO [contains] (applicationId, interviewId)
 VALUES
 -- Bob Johnson's applicationId 5
+(5, 1),
 (5, 2),
-(5, 3),
 
 -- Carol Williams's applicationId 7
 (7, 4),
 (7, 5),
-(7, 6),
+(7, 3),
 
 -- Henry Garcia's applicationId 20
+(20, 6),
 (20, 7),
-(20, 8),
 
 -- Mary Moore's applicationId 33
+(33, 8),
 (33, 9),
-(33, 10),
 
 -- Robert Clark's applicationId 45
+(45, 10),
 (45, 11),
-(45, 12),
 
 -- Wendy Wright's applicationId 58
+(58, 12),
 (58, 13),
-(58, 14),
 
 -- Brian Adams's applicationId 68
+(68, 14),
 (68, 15),
-(68, 16),
 
 -- Gina Mitchell's applicationId 79
+(79, 16),
 (79, 17),
-(79, 18),
 
 -- Harry Perez's applicationId 82
-(82, 19),
-(82, 20);
+(82, 18),
+(82, 19);
 
 
 INSERT INTO locatedAt (companyId, jobId)
@@ -1075,5 +1075,3 @@ VALUES
 (26, 93),
 (17, 94),
 (10, 95);
-
-
