@@ -198,5 +198,37 @@ LEFT JOIN fullTime_benefits fb ON f.jobId = fb.jobId;
 GO
 
 
+-- Part 4: Trigger: the trigger here will change application status of an application to "Interviewing" when an interview is inserted into the DB
+-- learned about the "inserted" table from here: https://learn.microsoft.com/en-us/sql/relational-databases/triggers/use-the-inserted-and-deleted-tables?view=sql-server-ver16
+
+CREATE TRIGGER application_status_interviewing ON interview AFTER INSERT AS BEGIN
+    UPDATE [application] SET status = 'Interviewing' FROM [application] a 
+    JOIN [contains] c ON a.applicationId = c.applicationId JOIN inserted i 
+    ON c.interviewId = i.interviewId;
+END;
+
+-- Part 5: Column Encryption. We will encrypt the user login password to handle authentication into website.
+-- while the commands won't add the encrypted passwords to the db, it will set it up so that on user signup we can
+-- use the key and certificate to encrypt passwords into db
+
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'password123';
+
+CREATE CERTIFICATE UserCert WITH SUBJECT = 'Certificate for user password encryption';
+
+CREATE SYMMETRIC KEY UserKey WITH ALGORITHM = AES_256 ENCRYPTION BY CERTIFICATE UserCert;
+
+ALTER TABLE [user] ADD EncryptedPassword VARBINARY(256);
+
+-- Part 6: Non-clustered Indexes
+
+-- this will be useful index because a primary feature of sight will be displaying an interacting with the job openings in the job table
+CREATE NONCLUSTERED INDEX idx_jobId ON job(jobId);
+
+-- this will be useful index because we will often need to access an application in relation to the logged in user (by email) and find out that applications status
+CREATE NONCLUSTERED INDEX idx_applicationId_email_status ON [application](applicationId, email, status);
+
+-- this will be a useful index because it represents a relation table that connects interviews to an application. This will be accessed a lot in joins\
+-- when trying to get information about a specific applications interviews.
+CREATE NONCLUSTERED INDEX idx_contains_applicationId_interviewId ON [contains](applicationId, interviewId);
 
 
