@@ -1,5 +1,8 @@
 -- p4
 -- stored procedure 1
+-- This stored procedure allows a user to apply for a job by inserting a new application record into the database. It records the application details, logs the submission, and returns the new application ID.
+
+
 
 CREATE PROCEDURE spApplyForJob
     @userEmail VARCHAR(255),
@@ -25,6 +28,9 @@ END
 GO
 
 -- stored procedure 2
+-- This stored procedure retrieves all job applications submitted by a specific user, along with related job and company information, providing a comprehensive view of the user's application history.
+
+
 CREATE PROCEDURE spGetUserApplications
     @userEmail VARCHAR(255)
 AS
@@ -49,6 +55,7 @@ END
 GO
 
 -- stored procedure 3
+-- This stored procedure schedules a new interview for a job application. It determines the next interview round, records the interview details, associates it with the application, updates the application status, and returns the new interview ID.
 CREATE PROCEDURE spScheduleInterview
     @applicationId INT,
     @date DATE,
