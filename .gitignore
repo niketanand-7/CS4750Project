@@ -1,0 +1,11 @@
+.env
+
+# Database configuration
+DB_DRIVER=ODBC Driver 18 for SQL Server
+DB_SERVER=localhost
+DB_DATABASE=ClassProjectV2
+DB_USERNAME=SA
+DB_PASSWORD=Valuetech@123 
+
+DB_ENCRYPT=yes
+DB_TRUST_SERVER_CERTIFICATE=yes
